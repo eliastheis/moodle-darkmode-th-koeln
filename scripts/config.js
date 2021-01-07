@@ -1,0 +1,13 @@
+console.log("[DarkMode] loading config.js...");
+
+const backgroundColor = "#181818";
+const backgroundColorLight = "#282828";
+const backgroundColorLightest = "#383838";
+const textColor = "white";
+const borderColor = backgroundColorLightest;
+const menueBorderColor = backgroundColor;
+
+function addDefaultDesign(elem) {
+	elem.style.backgroundColor = backgroundColor;
+	elem.style.color = textColor;
+}

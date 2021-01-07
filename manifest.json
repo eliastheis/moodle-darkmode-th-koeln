@@ -1,0 +1,36 @@
+{
+    "name": "Darkmode for Moodle",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "Schaltet die Lichter von der Moodle-Seite aus. Es können noch fehler auftreten.",
+    "icons": {
+        "128": "icon.png"
+    },
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html",
+        "default_title": "Darkmode for Moodle"
+    },
+    "content_scripts": [
+        {
+            "matches": [ "*://*/*" ],
+            "include_globs": ["*://moodle.uni-wuppertal.de/*"],
+            "js": ["scripts/config.js",
+                   "scripts/banner.js",
+                   "scripts/menue.js",
+                   "scripts/chat.js",
+                   "scripts/footer.js",
+                   "scripts/generalElements.js"]
+        },
+        {
+            "matches": [ "*://*/*" ],
+            "include_globs": ["*://moodle.uni-wuppertal.de/"],
+            "js": ["sites/index.js"]
+        },
+        {
+            "matches": [ "*://*/*" ],
+            "include_globs": ["*://moodle.uni-wuppertal.de/user/index.*"],
+            "js": ["sites/user.js"]
+        }
+    ]
+}
