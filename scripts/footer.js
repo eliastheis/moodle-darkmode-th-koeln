@@ -1,7 +1,7 @@
 console.log("[DarkMode] loading footer.js...");
 
 classes = [
-	"bg-dark",
+    "bg-dark",
     "footnote",
     "text-light"
 ]

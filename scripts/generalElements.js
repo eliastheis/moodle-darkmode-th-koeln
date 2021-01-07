@@ -1,9 +1,9 @@
 console.log("[DarkMode] loading generalElements.js...");
 
 classes = [
-	"card",
-	"has-blocks",
-	"card-body",
+    "card",
+    "has-blocks",
+    "card-body",
 ]
 
 // body
@@ -39,15 +39,15 @@ for (let i = 0; i < classes.length; i++) {
 // text fields
 elems = document.getElementsByTagName("input")
 for (let i = 0; i < elems.length; i++) {
-	elems[i].style.backgroundColor = backgroundColorLight;
-	elems[i].style.color = textColor;
+    elems[i].style.backgroundColor = backgroundColorLight;
+    elems[i].style.color = textColor;
 }
 
 // selects
 elems = document.getElementsByTagName("select")
 for (let i = 0; i < elems.length; i++) {
-	elems[i].style.backgroundColor = backgroundColorLight;
-	elems[i].style.color = textColor;
+    elems[i].style.backgroundColor = backgroundColorLight;
+    elems[i].style.color = textColor;
 }
 
 // scroll up button

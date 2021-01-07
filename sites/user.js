@@ -17,15 +17,15 @@ addDefaultDesignWithBorder(elem);
 /*
 elems = document.getElementsByClassName("page-item");
 for (let i = 0; i < elems.length; i++) {
-	addDefaultDesign(elems[i])
+    addDefaultDesign(elems[i])
 }*/
 
 // list
 elems = document.getElementsByClassName("c1");
 for (let i = 0; i < elems.length; i++) {
-	addDefaultDesign(elems[i])
+    addDefaultDesign(elems[i])
 }
 elems = document.getElementsByClassName("c2");
 for (let i = 0; i < elems.length; i++) {
-	addDefaultDesign(elems[i])
+    addDefaultDesign(elems[i])
 }
