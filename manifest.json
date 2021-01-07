@@ -15,12 +15,14 @@
         {
             "matches": [ "*://*/*" ],
             "include_globs": ["*://moodle.uni-wuppertal.de/*"],
+            "css": ["css/hide.css"],
             "js": ["scripts/config.js",
                    "scripts/banner.js",
                    "scripts/menue.js",
                    "scripts/chat.js",
                    "scripts/footer.js",
-                   "scripts/generalElements.js"]
+                   "scripts/generalElements.js",
+                   "scripts/show.js"]
         },
         {
             "matches": [ "*://*/*" ],
