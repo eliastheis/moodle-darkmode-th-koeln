@@ -11,3 +11,9 @@ function addDefaultDesign(elem) {
 	elem.style.backgroundColor = backgroundColor;
 	elem.style.color = textColor;
 }
+
+function addDefaultDesignWithBorder(elem) {
+	elem.style.backgroundColor = backgroundColor;
+	elem.style.color = textColor;
+	elem.style.border = "1px solid " + borderColor;
+}

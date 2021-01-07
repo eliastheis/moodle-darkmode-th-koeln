@@ -43,6 +43,13 @@ for (let i = 0; i < elems.length; i++) {
 	elems[i].style.color = textColor;
 }
 
+// selects
+elems = document.getElementsByTagName("select")
+for (let i = 0; i < elems.length; i++) {
+	elems[i].style.backgroundColor = backgroundColorLight;
+	elems[i].style.color = textColor;
+}
+
 // scroll up button
 try {
     elem = document.querySelectorAll('[role="button"]')[13]
