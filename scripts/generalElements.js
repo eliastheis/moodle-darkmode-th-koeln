@@ -19,7 +19,7 @@ elem.style.borderColor = borderColor;
 // classes
 for (let i = 0; i < classes.length; i++) {
   elems = document.getElementsByClassName(classes[i]);
-  for (let j = 0; j < elems.length; j++){
+  for (let j = 0; j < elems.length; j++) {
     try {
       if (classes[i] == 'bg-dark'){
         elems[j].classList.remove('bg-dark');
@@ -30,7 +30,7 @@ for (let i = 0; i < classes.length; i++) {
       elems[j].style.backgroundColor = backgroundColor;
       elems[j].style.color = textColor;
       elems[j].style.borderColor = borderColor;
-    } catch (e){}
+    } catch (e) {}
     
 
   }
@@ -55,4 +55,4 @@ try {
   elem = document.querySelectorAll('[role='button']')[13]
   elem.style.backgroundColor = backgroundColor;
   elem.style.color = textColor;
-} catch (e){}
+} catch (e) {}

@@ -35,7 +35,7 @@ async function dark_mode() {
   // classes
   for (let i = 0; i < classes.length; i++) {
     elems = document.getElementsByClassName(classes[i]);
-    for (let j = 0; j < elems.length; j++){
+    for (let j = 0; j < elems.length; j++) {
       try {
         if (classes[i] == 'bg-dark'){
           elems[j].classList.remove('bg-dark');
@@ -46,7 +46,7 @@ async function dark_mode() {
         elems[j].style.backgroundColor = backgroundColor;
         elems[j].style.color = textColor;
         elems[j].style.borderColor = borderColor;
-      } catch (e){}
+      } catch (e) {}
       
 
     }
@@ -55,11 +55,11 @@ async function dark_mode() {
   // classes light
   for (let i = 0; i < classes_light.length; i++) {
     elems = document.getElementsByClassName(classes_light[i]);
-    for (let j = 0; j < elems.length; j++){
+    for (let j = 0; j < elems.length; j++) {
       try {
         elems[j].style.backgroundColor = backgroundColorLight;
         elems[j].style.color = textColor;
-      } catch (e){}
+      } catch (e) {}
     }
   }
 

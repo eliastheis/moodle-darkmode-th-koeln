@@ -17,24 +17,24 @@ ids_light = [
 // classes light
 for (let i = 0; i < classes_light.length; i++) {
   elems = document.getElementsByClassName(classes_light[i]);
-  for (let j = 0; j < elems.length; j++){
+  for (let j = 0; j < elems.length; j++) {
     try {
       elems[j].style.backgroundColor = backgroundColorLight;
       elems[j].style.color = textColor;
       elems[j].style.borderColor = menueBorderColor;
-    } catch (e){}
+    } catch (e) {}
   }
 }
 
 // classes lightest
 for (let i = 0; i < classes_lightest.length; i++) {
   elems = document.getElementsByClassName(classes_lightest[i]);
-  for (let j = 0; j < elems.length; j++){
+  for (let j = 0; j < elems.length; j++) {
     try {
       elems[j].style.backgroundColor = backgroundColorLightest;
       elems[j].style.color = textColor;
       elems[j].style.borderColor = menueBorderColor;
-    } catch (e){}
+    } catch (e) {}
   }
 }
 

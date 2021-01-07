@@ -9,7 +9,7 @@ classes = [
 // classes
 for (let i = 0; i < classes.length; i++) {
   elems = document.getElementsByClassName(classes[i]);
-  for (let j = 0; j < elems.length; j++){
+  for (let j = 0; j < elems.length; j++) {
     try {
       
       elems[j].classList.remove('bg-dark');
@@ -18,7 +18,7 @@ for (let i = 0; i < classes.length; i++) {
       elems[j].style.backgroundColor = backgroundColorLight;
       elems[j].style.color = textColor;
       elems[j].style.borderColor = borderColor;
-    } catch (e){}
+    } catch (e) {}
   }
 }
 
