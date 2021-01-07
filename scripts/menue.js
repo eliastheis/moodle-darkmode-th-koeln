@@ -2,16 +2,16 @@ console.log('[DarkMode] loading menue.js...');
 
 classes_light = [
   'list-group',
-  'list-group-item'
+  'list-group-item',
 ]
 
 classes_lightest = [
   'list-group-item.active',
-  'active'
+  'active',
 ]
 
 ids_light = [
-  'nav-drawer'
+  'nav-drawer',
 ]
 
 // classes light

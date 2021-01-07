@@ -25,7 +25,7 @@ try {
 
 classes_light = [
   'popover-region-container',
-  'popover-region-footer-container'
+  'popover-region-footer-container',
 ]
 for (let i = 0; i < classes_light.length; i++) {
   elems = document.getElementsByClassName(classes_light[i]);

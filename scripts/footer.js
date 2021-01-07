@@ -3,7 +3,7 @@ console.log('[DarkMode] loading footer.js...');
 classes = [
   'bg-dark',
   'footnote',
-  'text-light'
+  'text-light',
 ]
 
 // classes
