@@ -31,6 +31,11 @@
             "matches": [ "*://*/*" ],
             "include_globs": ["*://moodle.uni-wuppertal.de/user/index.*"],
             "js": ["sites/user.js"]
+        },
+        {
+            "matches": [ "*://*/*" ],
+            "include_globs": ["*://moodle.uni-wuppertal.de/grade/*"],
+            "js": ["sites/grade.js"]
         }
     ]
 }
