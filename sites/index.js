@@ -9,7 +9,7 @@ async function dark_mode() {
     'block',
     'generaltable',
   ]
-  
+
   ids = [
     'region-main',
   ]
@@ -47,7 +47,7 @@ async function dark_mode() {
         elems[j].style.color = textColor;
         elems[j].style.borderColor = borderColor;
       } catch (e) {}
-      
+
 
     }
   }
