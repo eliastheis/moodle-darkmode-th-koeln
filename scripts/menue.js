@@ -1,22 +1,22 @@
 console.log('[DarkMode] loading menue.js...');
 
-classes_light = [
+classesLight = [
   'list-group',
   'list-group-item',
 ]
 
-classes_lightest = [
+classesLightest = [
   'list-group-item.active',
   'active',
 ]
 
-ids_light = [
+idsLight = [
   'nav-drawer',
 ]
 
 // classes light
-for (let i = 0; i < classes_light.length; i++) {
-  elems = document.getElementsByClassName(classes_light[i]);
+for (let i = 0; i < classesLight.length; i++) {
+  elems = document.getElementsByClassName(classesLight[i]);
   for (let j = 0; j < elems.length; j++) {
     try {
       elems[j].style.backgroundColor = backgroundColorLight;
@@ -27,8 +27,8 @@ for (let i = 0; i < classes_light.length; i++) {
 }
 
 // classes lightest
-for (let i = 0; i < classes_lightest.length; i++) {
-  elems = document.getElementsByClassName(classes_lightest[i]);
+for (let i = 0; i < classesLightest.length; i++) {
+  elems = document.getElementsByClassName(classesLightest[i]);
   for (let j = 0; j < elems.length; j++) {
     try {
       elems[j].style.backgroundColor = backgroundColorLightest;
@@ -39,7 +39,7 @@ for (let i = 0; i < classes_lightest.length; i++) {
 }
 
 // IDs light
-for (let i = 0; i < ids_light.length; i++) {
-  document.getElementById(ids_light[i]).style.backgroundColor = backgroundColorLight;
-  document.getElementById(ids_light[i]).style.color = textColor;
+for (let i = 0; i < idsLight.length; i++) {
+  document.getElementById(idsLight[i]).style.backgroundColor = backgroundColorLight;
+  document.getElementById(idsLight[i]).style.color = textColor;
 }

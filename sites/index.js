@@ -14,14 +14,14 @@ async function dark_mode() {
     'region-main',
   ]
 
-  classes_light = [
+  classesLight = [
     'drawer',
     'header-container',
     'view-overview-body',
     'modal-content',
   ]
 
-  ids_lightest = [
+  idsLightest = [
     'view-overview-favourites-toggle',
     'view-overview-group-messages-toggle',
     'view-overview-messages-toggle',
@@ -53,8 +53,8 @@ async function dark_mode() {
   }
 
   // classes light
-  for (let i = 0; i < classes_light.length; i++) {
-    elems = document.getElementsByClassName(classes_light[i]);
+  for (let i = 0; i < classesLight.length; i++) {
+    elems = document.getElementsByClassName(classesLight[i]);
     for (let j = 0; j < elems.length; j++) {
       try {
         elems[j].style.backgroundColor = backgroundColorLight;
@@ -64,9 +64,9 @@ async function dark_mode() {
   }
 
   // IDs lightest
-  for (let i = 0; i < ids_lightest.length; i++) {
-    document.getElementById(ids_lightest[i]).style.backgroundColor = backgroundColorLightest;
-    document.getElementById(ids_lightest[i]).style.color = textColor;
+  for (let i = 0; i < idsLightest.length; i++) {
+    document.getElementById(idsLightest[i]).style.backgroundColor = backgroundColorLightest;
+    document.getElementById(idsLightest[i]).style.color = textColor;
   }
 
   // IDs

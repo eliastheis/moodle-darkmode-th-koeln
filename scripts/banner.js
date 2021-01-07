@@ -23,12 +23,12 @@ try {
   elem.style.color = backgroundColor;
 } catch (e) {}
 
-classes_light = [
+classesLight = [
   'popover-region-container',
   'popover-region-footer-container',
 ]
-for (let i = 0; i < classes_light.length; i++) {
-  elems = document.getElementsByClassName(classes_light[i]);
+for (let i = 0; i < classesLight.length; i++) {
+  elems = document.getElementsByClassName(classesLight[i]);
   for (let j = 0; j < elems.length; j++) {
     try {
       elems[j].style.backgroundColor = backgroundColorLight;
