@@ -1,30 +1,30 @@
 
 async function dark_mode() {
 
-  console.log("[DarkMode] loading main.js...");
+  console.log('[DarkMode] loading main.js...');
 
   classes = [
-    "card",
-    "card-body",
-    "block",
-    "generaltable",
+    'card',
+    'card-body',
+    'block',
+    'generaltable',
   ]
   
   ids = [
-    "region-main",
+    'region-main',
   ]
 
   classes_light = [
-    "drawer",
-    "header-container",
-    "view-overview-body",
-    "modal-content"
+    'drawer',
+    'header-container',
+    'view-overview-body',
+    'modal-content'
   ]
 
   ids_lightest = [
-    "view-overview-favourites-toggle",
-    "view-overview-group-messages-toggle",
-    "view-overview-messages-toggle"
+    'view-overview-favourites-toggle',
+    'view-overview-group-messages-toggle',
+    'view-overview-messages-toggle'
   ]
 
 
@@ -37,11 +37,11 @@ async function dark_mode() {
     elems = document.getElementsByClassName(classes[i]);
     for (let j = 0; j < elems.length; j++){
       try {
-        if (classes[i] == "bg-dark"){
-          elems[j].classList.remove("bg-dark");
+        if (classes[i] == 'bg-dark'){
+          elems[j].classList.remove('bg-dark');
         }
-        if (classes[i] == "text-light"){
-          elems[j].classList.remove("text-light");
+        if (classes[i] == 'text-light'){
+          elems[j].classList.remove('text-light');
         }
         elems[j].style.backgroundColor = backgroundColor;
         elems[j].style.color = textColor;
@@ -77,7 +77,7 @@ async function dark_mode() {
   }
 
   // search button
-  elem = document.getElementsByClassName("btn")[1]
+  elem = document.getElementsByClassName('btn')[1]
   elem.style.backgroundColor = backgroundColorLightest;
   elem.style.color = textColor;
 
