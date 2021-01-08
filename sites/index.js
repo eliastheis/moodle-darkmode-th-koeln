@@ -65,8 +65,10 @@ async function dark_mode() {
 
   // IDs lightest
   for (let i = 0; i < idsLightest.length; i++) {
-    document.getElementById(idsLightest[i]).style.backgroundColor = backgroundColorLightest;
-    document.getElementById(idsLightest[i]).style.color = textColor;
+    try {
+      document.getElementById(idsLightest[i]).style.backgroundColor = backgroundColorLightest;
+      document.getElementById(idsLightest[i]).style.color = textColor;
+    } catch(e) {} 
   }
 
   // IDs

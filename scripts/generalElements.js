@@ -52,7 +52,7 @@ for (let i = 0; i < elems.length; i++) {
 
 // scroll up button
 try {
-  elem = document.querySelectorAll('[role='button']')[13]
+  elem = document.querySelectorAll('[role="button"]')[13]
   elem.style.backgroundColor = backgroundColor;
   elem.style.color = textColor;
 } catch (e) {}
