@@ -25,3 +25,17 @@ for (let i = 0; i < classes.length; i++) {
 elem = document.getElementById('page-footer');
 elem.style.backgroundColor = backgroundColorLight;
 elem.style.color = textColor;
+
+
+elem = document.getElementsByClassName('text_to_html')[0];
+node = document.createTextNode(' | ');
+a = document.createElement('a')
+a.href = 'https://www.buymeacoffee.com/eliastheis'
+a.target = '_blank'
+img = document.createElement('img')
+img.src = 'https://cdn.buymeacoffee.com/buttons/v2/default-blue.png'
+img.alt = 'Buy Me A Beer'
+img.style = 'height: 40px !important;width: 145px !important;'
+a.appendChild(img)
+elem.appendChild(node);
+elem.appendChild(a);
