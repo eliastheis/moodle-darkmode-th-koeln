@@ -56,3 +56,13 @@ try {
   elem.style.backgroundColor = backgroundColor;
   elem.style.color = textColor;
 } catch (e) {}
+
+// buttons
+elems = document.getElementsByClassName('btn-secondary');
+for (let j = 0; j < elems.length; j++) {
+  try {
+    elems[j].style.backgroundColor = backgroundColorLightest;
+    elems[j].style.color = textColor;
+    elems[j].style.borderColor = menueBorderColor;
+  } catch (e) {}
+}
