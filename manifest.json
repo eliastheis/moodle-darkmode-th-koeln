@@ -43,6 +43,11 @@
             "matches": [ "*://*/*" ],
             "include_globs": ["*://moodle.uni-wuppertal.de/grade/*"],
             "js": ["sites/grade.js"]
+        },
+        {
+            "matches": [ "*://*/*" ],
+            "include_globs": ["*://moodle.uni-wuppertal.de/my/*"],
+            "js": ["sites/dashboard.js"]
         }
     ]
 }

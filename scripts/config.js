@@ -17,3 +17,7 @@ function addDefaultDesignWithBorder(elem) {
   elem.style.color = textColor;
   elem.style.border = '1px solid ' + borderColor;
 }
+
+function Sleep(milliseconds) {
+  return new Promise(resolve => setTimeout(resolve, milliseconds));
+}

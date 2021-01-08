@@ -66,3 +66,21 @@ for (let j = 0; j < elems.length; j++) {
     elems[j].style.borderColor = menueBorderColor;
   } catch (e) {}
 }
+
+// dropdown-menu
+elems = document.getElementsByClassName('dropdown-menu');
+for (let j = 0; j < elems.length; j++) {
+  try {
+    elems[j].style.backgroundColor = backgroundColorLightest;
+    elems[j].style.color = textColor;
+    elems[j].style.borderColor = menueBorderColor;
+  } catch (e) {}
+}
+elems = document.getElementsByClassName('dropdown-item');
+for (let j = 0; j < elems.length; j++) {
+  try {
+    elems[j].style.backgroundColor = backgroundColorLightest;
+    elems[j].style.color = textColor;
+    elems[j].style.borderColor = menueBorderColor;
+  } catch (e) {}
+}
