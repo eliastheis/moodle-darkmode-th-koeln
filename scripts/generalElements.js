@@ -4,6 +4,7 @@ classes = [
   'card',
   'has-blocks',
   'card-body',
+  'section'
 ]
 
 // body
@@ -82,5 +83,41 @@ for (let j = 0; j < elems.length; j++) {
     elems[j].style.backgroundColor = backgroundColorLightest;
     elems[j].style.color = textColor;
     elems[j].style.borderColor = menueBorderColor;
+  } catch (e) {}
+}
+
+// tables
+
+elems = document.querySelectorAll('[border="1"]')
+for (let j = 0; j < elems.length; j++) {
+  try {
+    elems[j].style.border = "1px solid " + textColor;
+  } catch (e) {}
+}
+
+
+// tables (tbody)
+elems = document.getElementsByTagName('tbody');
+for (let j = 0; j < elems.length; j++) {
+  try {
+    elems[j].style.border = "1px solid " + textColor;
+  } catch (e) {}
+}
+
+// generalbox
+elems = document.getElementsByClassName('generalbox');
+for (let j = 0; j < elems.length; j++) {
+  try {
+    elems[j].style.backgroundColor = backgroundColor;
+    elems[j].style.color = textColor;
+  } catch (e) {}
+}
+
+// legend
+elems = document.getElementsByClassName('legend');
+for (let j = 0; j < elems.length; j++) {
+  try {
+    elems[j].style.backgroundColor = backgroundColor;
+    elems[j].style.color = textColor;
   } catch (e) {}
 }

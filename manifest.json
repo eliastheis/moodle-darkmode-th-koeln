@@ -48,6 +48,11 @@
             "matches": [ "*://*/*" ],
             "include_globs": ["*://moodle.uni-wuppertal.de/my/*"],
             "js": ["sites/dashboard.js"]
+        },
+        {
+            "matches": [ "*://*/*" ],
+            "include_globs": ["*://moodle.uni-wuppertal.de/mod/publication*"],
+            "js": ["sites/mod_publication.js"]
         }
     ]
 }
