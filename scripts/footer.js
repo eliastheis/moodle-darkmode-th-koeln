@@ -28,9 +28,13 @@ elem = document.getElementById('page-footer');
 elem.style.backgroundColor = backgroundColorLight;
 elem.style.color = textColor;
 
+try {
+  document.getElementsByClassName('homelink')[0].childNodes[0].style = "color: white!important;";
+} catch(e) {}
+try {
+  document.getElementsByClassName('policiesfooter')[0].childNodes[0].style = "color: white!important;";
+} catch(e) {}
 
-document.getElementsByClassName('homelink')[0].childNodes[0].style = "color: white!important;";
-document.getElementsByClassName('policiesfooter')[0].childNodes[0].style = "color: white!important;";
 
 
 elem = document.getElementsByClassName('text_to_html')[0];
