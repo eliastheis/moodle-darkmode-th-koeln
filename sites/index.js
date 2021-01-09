@@ -83,6 +83,13 @@ async function dark_mode() {
   elem.style.backgroundColor = backgroundColorLightest;
   elem.style.color = textColor;
 
+  // ZIM-img_background
+  try {
+    elem = document.querySelectorAll('[src="https://moodle.uni-wuppertal.de/pluginfile.php/1624/block_html/content/ZIM%20log%20klein%20und%20gr%C3%BCn.png"]')[0]
+    elem.style.backgroundColor = textColor;
+  } catch (e) {}
+  
+
 }
 
 dark_mode();
