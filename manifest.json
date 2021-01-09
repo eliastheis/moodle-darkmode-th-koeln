@@ -2,10 +2,13 @@
     "name": "Darkmode for Moodle",
     "version": "1.0",
     "manifest_version": 2,
-    "description": "Schaltet die Lichter von der Moodle-Seite aus. Es können noch fehler auftreten.",
-    "icons": {
-        "128": "icon.png"
+    "description": "BUW Moodle in Darkmode.",
+    "icons": 
+{        "128": "icon.png"
     },
+    "permissions": [
+        "*://moodle.uni-wuppertal.de/*"
+    ],
     "browser_action": {
         "default_icon": "icon.png",
         "default_popup": "popup.html",
@@ -13,8 +16,7 @@
     },
     "content_scripts": [
         {
-            "matches": [ "*://*/*" ],
-            "include_globs": ["*://moodle.uni-wuppertal.de/*"],
+            "matches": [ "*://moodle.uni-wuppertal.de/*" ],
             "css": ["css/hide.css"],
             "js": ["scripts/config.js",
                    "scripts/banner.js",
@@ -25,33 +27,27 @@
                    "scripts/show.js"]
         },
         {
-            "matches": [ "*://*/*" ],
-            "include_globs": ["*://moodle.uni-wuppertal.de/"],
+            "matches": [ "*://moodle.uni-wuppertal.de/" ],
             "js": ["sites/index.js"]
         },
         {
-            "matches": [ "*://*/*" ],
-            "include_globs": ["*://moodle.uni-wuppertal.de/course/*"],
+            "matches": ["*://moodle.uni-wuppertal.de/course/*"],
             "js": ["sites/course.js"]
         },
         {
-            "matches": [ "*://*/*" ],
-            "include_globs": ["*://moodle.uni-wuppertal.de/user/index.*"],
+            "matches": ["*://moodle.uni-wuppertal.de/user/index.*"],
             "js": ["sites/user.js"]
         },
         {
-            "matches": [ "*://*/*" ],
-            "include_globs": ["*://moodle.uni-wuppertal.de/grade/*"],
+            "matches": ["*://moodle.uni-wuppertal.de/grade/*"],
             "js": ["sites/grade.js"]
         },
         {
-            "matches": [ "*://*/*" ],
-            "include_globs": ["*://moodle.uni-wuppertal.de/my/*"],
+            "matches": ["*://moodle.uni-wuppertal.de/my/*"],
             "js": ["sites/dashboard.js"]
         },
         {
-            "matches": [ "*://*/*" ],
-            "include_globs": ["*://moodle.uni-wuppertal.de/mod/publication*"],
+            "matches": ["*://moodle.uni-wuppertal.de/mod/publication*"],
             "js": ["sites/mod_publication.js"]
         }
     ]
