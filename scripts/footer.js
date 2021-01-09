@@ -4,6 +4,8 @@ classes = [
   'bg-dark',
   'footnote',
   'text-light',
+  // 'homelink',
+  // 'policiesfooter',
 ]
 
 // classes
@@ -25,6 +27,10 @@ for (let i = 0; i < classes.length; i++) {
 elem = document.getElementById('page-footer');
 elem.style.backgroundColor = backgroundColorLight;
 elem.style.color = textColor;
+
+
+document.getElementsByClassName('homelink')[0].childNodes[0].style = "color: white!important;";
+document.getElementsByClassName('policiesfooter')[0].childNodes[0].style = "color: white!important;";
 
 
 elem = document.getElementsByClassName('text_to_html')[0];
