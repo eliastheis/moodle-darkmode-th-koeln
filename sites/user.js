@@ -10,7 +10,7 @@ elem.classList.remove('bg-white');
 elem.classList.remove('border');
 addDefaultDesignWithBorder(elem);
 // filter reset
-elem = document.querySelectorAll('[data-filteraction='reset']')[0];
+elem = document.querySelectorAll('[data-filteraction="reset"]')[0];
 addDefaultDesignWithBorder(elem);
 
 // alphabet (not working)
