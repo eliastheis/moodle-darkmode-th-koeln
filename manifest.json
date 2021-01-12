@@ -52,6 +52,10 @@
             "js": ["sites/mod_publication.js"]
         },
         {
+            "matches": ["*://moodle.uni-wuppertal.de/mod/folder*"],
+            "js": ["sites/mod_folder.js"]
+        },
+        {
             "matches": ["*://moodle.uni-wuppertal.de/mod/quiz/*"],
             "js": ["scripts/config.js",
                    "scripts/banner.js",
