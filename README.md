@@ -3,10 +3,10 @@ Diese Extension erweitertet Moodle von BUW (Bergische Universität Wuppertal) um
 
 ## Download
 
-[Firefox Addon](https://addons.mozilla.org/de/firefox/addon/darkmode-f%C3%BCr-buw-moodle/)
+[Firefox Addon](https://addons.mozilla.org/de/firefox/addon/darkmode-f%C3%BCr-buw-moodle/)<br>
 [Chrome Extension](https://chrome.google.com/webstore/detail/darkmode-f%C3%BCr-buw-moodle/kipahojjgbnhnjjfpamggpealcdaalfp?hl=de)
 
 
 ## Screnhots
-![screenshot 1](screenshots/screenshot_1.png)
+![screenshot 1](screenshots/screenshot_1.png)<br>
 ![screenshot 2](screenshots/screenshot_2.png)
