@@ -29,10 +29,10 @@ elem.style.backgroundColor = backgroundColorLight;
 elem.style.color = textColor;
 
 try {
-  document.getElementsByClassName('homelink')[0].childNodes[0].style = "color: white!important;";
+  document.getElementsByClassName('homelink')[0].childNodes[0].style = 'color: white!important;';
 } catch(e) {}
 try {
-  document.getElementsByClassName('policiesfooter')[0].childNodes[0].style = "color: white!important;";
+  document.getElementsByClassName('policiesfooter')[0].childNodes[0].style = 'color: white!important;';
 } catch(e) {}
 
 

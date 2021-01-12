@@ -34,7 +34,7 @@ async function generalElements() {
         elems[j].style.color = textColor;
         elems[j].style.borderColor = borderColor;
       } catch (e) {}
-      
+
 
     }
   }
@@ -92,7 +92,7 @@ async function generalElements() {
   elems = document.querySelectorAll('[border="1"]')
   for (let j = 0; j < elems.length; j++) {
     try {
-      elems[j].style.border = "1px solid " + textColor;
+      elems[j].style.border = '1px solid ' + textColor;
     } catch (e) {}
   }
 
@@ -108,7 +108,7 @@ async function generalElements() {
   elems = document.getElementsByTagName('tbody');
   for (let j = 0; j < elems.length; j++) {
     try {
-      elems[j].style.border = "1px solid " + textColor;
+      elems[j].style.border = '1px solid ' + textColor;
     } catch (e) {}
   }
 
@@ -134,7 +134,7 @@ async function generalElements() {
   while (true) {
     try {
       await Sleep(5);
-      elem = document.getElementsByClassName("modal-content")[0];
+      elem = document.getElementsByClassName('modal-content')[0];
       elem.style.backgroundColor = backgroundColorLight;
       elem.style.color = textColor;
     } catch (e) {}

@@ -21,18 +21,18 @@ async function dark_dashborad() {
     await Sleep(100);
   }
   // timeline
-  elems = document.getElementsByClassName("list-group-item flex-column py-2 pl-0 pr-0 border-0")
+  elems = document.getElementsByClassName('list-group-item flex-column py-2 pl-0 pr-0 border-0')
   for (let j = 0; j < elems.length; j++) {
     try {
       addDefaultDesign(elems[j]);
     } catch (e) {}
   }
-  
+
 
   // update if change (not final, pls improve)
   tmp = document.getElementsByClassName('course-info-container')[4].style.backgroundColor
   while (true) {
-    await Sleep(100); 
+    await Sleep(100);
     elems = document.getElementsByClassName('course-info-container');
     for (let j = 0; j < elems.length; j++) {
       try {
@@ -58,7 +58,7 @@ async function dark_dashborad() {
     }
 
     // timeline
-    elems = document.getElementsByClassName("list-group-item flex-column py-2 pl-0 pr-0 border-0")
+    elems = document.getElementsByClassName('list-group-item flex-column py-2 pl-0 pr-0 border-0')
     for (let j = 0; j < elems.length; j++) {
       try {
         addDefaultDesign(elems[j]);

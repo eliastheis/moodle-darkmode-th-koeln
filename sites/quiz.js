@@ -33,7 +33,7 @@ for (let i = 0; i < classes.length; i++) {
       elems[j].style.color = textColor;
       elems[j].style.borderColor = borderColor;
     } catch (e) {}
-    
+
 
   }
 }
@@ -50,7 +50,7 @@ for (let j = 0; j < elems.length; j++) {
 
 
 // info-box
-elems = document.getElementsByClassName("info");
+elems = document.getElementsByClassName('info');
 for (let i = 0; i < elems.length; i++) {
   addDefaultDesign(elems[i]);
 }
@@ -59,7 +59,7 @@ for (let i = 0; i < elems.length; i++) {
 elems = document.getElementsByTagName('tbody');
 for (let j = 0; j < elems.length; j++) {
   try {
-    elems[j].style.border = "none";
+    elems[j].style.border = 'none';
   } catch (e) {}
 }
 

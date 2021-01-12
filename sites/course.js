@@ -10,6 +10,6 @@ for (let i = 0; i < elems.length; i++) {
 elems = document.getElementsByTagName('tbody');
 for (let j = 0; j < elems.length; j++) {
   try {
-    elems[j].style.border = "";
+    elems[j].style.border = '';
   } catch (e) {}
 }
