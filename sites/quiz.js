@@ -55,5 +55,13 @@ for (let i = 0; i < elems.length; i++) {
 	addDefaultDesign(elems[i]);
 }
 
+// tables (tbody)
+elems = document.getElementsByTagName('tbody');
+  for (let j = 0; j < elems.length; j++) {
+  try {
+    elems[j].style.border = "none";
+  } catch (e) {}
+}
+
 // SHOW PAGE
 document.body.style.setProperty ('display', 'inherit', 'important');
