@@ -1,1 +1,1 @@
-document.body.style.setProperty ('display', 'inherit', 'important');
+document.body.style.setProperty('display', 'inherit', 'important');
