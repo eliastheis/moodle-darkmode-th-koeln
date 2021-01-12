@@ -24,7 +24,8 @@
                    "scripts/chat.js",
                    "scripts/footer.js",
                    "scripts/generalElements.js",
-                   "scripts/show.js"]
+                   "scripts/show.js"],
+            "exclude_matches": ["*://moodle.uni-wuppertal.de/mod/quiz/*"]
         },
         {
             "matches": [ "*://moodle.uni-wuppertal.de/" ],
@@ -49,6 +50,17 @@
         {
             "matches": ["*://moodle.uni-wuppertal.de/mod/publication*"],
             "js": ["sites/mod_publication.js"]
+        },
+        {
+            "matches": ["*://moodle.uni-wuppertal.de/mod/quiz/*"],
+            "js": ["scripts/config.js",
+                   "scripts/banner.js",
+                   "scripts/menue.js",
+                   "scripts/chat.js",
+                   "scripts/footer.js",
+                   "scripts/generalElements.js",
+                   "sites/quiz.js"
+                  ]
         }
     ]
 }
