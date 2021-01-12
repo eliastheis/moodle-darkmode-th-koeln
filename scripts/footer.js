@@ -38,7 +38,7 @@ try {
 
 
 elem = document.getElementsByClassName('text_to_html')[0];
-node = document.createTextNode(' | ');
+node = document.createTextNode(' | Darkmode by Elias Theis ');
 a = document.createElement('a')
 a.href = 'https://www.buymeacoffee.com/eliastheis'
 a.target = '_blank'
