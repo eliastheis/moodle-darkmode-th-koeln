@@ -1,8 +1,8 @@
 {
-    "name": "Darkmode for Moodle",
+    "name": "Darkmode für BUW Moodle",
     "version": "1.0",
     "manifest_version": 2,
-    "description": "BUW Moodle in Darkmode.",
+    "description": "Darkmode für BUW Moodle.",
     "icons": 
 {        "128": "icon.png"
     },
