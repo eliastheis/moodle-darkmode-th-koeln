@@ -89,7 +89,6 @@ async function generalElements() {
   }
 
   // tables
-
   elems = document.querySelectorAll('[border="1"]')
   for (let j = 0; j < elems.length; j++) {
     try {
@@ -97,6 +96,13 @@ async function generalElements() {
     } catch (e) {}
   }
 
+  // tables (generaltable)
+  elems = document.getElementsByClassName('generaltable');
+  for (let j = 0; j < elems.length; j++) {
+    try {
+      addDefaultDesign(elems[j])
+    } catch (e) {}
+  }
 
   // tables (tbody)
   elems = document.getElementsByTagName('tbody');
