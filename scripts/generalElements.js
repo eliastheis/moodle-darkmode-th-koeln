@@ -101,13 +101,14 @@ async function generalElements() {
     } catch (e) {}
   }
 
+/*
   // tables (tbody)
   elems = document.getElementsByTagName('tbody');
   for (let j = 0; j < elems.length; j++) {
     try {
       elems[j].style.border = '1px solid ' + textColor;
     } catch (e) {}
-  }
+  }*/
 
   // generalbox
   elems = document.getElementsByClassName('generalbox');

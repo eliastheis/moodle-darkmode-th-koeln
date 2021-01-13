@@ -23,9 +23,21 @@ for (let i = 0; i < elems.length; i++) {
 // list
 elems = document.getElementsByClassName('c1');
 for (let i = 0; i < elems.length; i++) {
-  addDefaultDesign(elems[i])
+  elems[i].style.color = textColor;
 }
 elems = document.getElementsByClassName('c2');
 for (let i = 0; i < elems.length; i++) {
-  addDefaultDesign(elems[i])
+  elems[i].style.color = textColor;
+}
+
+finished = false;
+elems = document.getElementsByTagName("tr");
+for (let i = 1; i < elems.length; i++) {
+  
+if (i%2 == 0) {
+  elems[i].style.backgroundColor = backgroundColor;
+} else {
+  elems[i].style.backgroundColor = backgroundColorLight;
+}
+  
 }
