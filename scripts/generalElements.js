@@ -1,12 +1,11 @@
 async function generalElements() {
-
   console.log('[DarkMode] loading generalElements.js...');
 
   classes = [
     'card',
     'has-blocks',
     'card-body',
-    'section'
+    'section',
   ]
 
   // body
@@ -24,18 +23,16 @@ async function generalElements() {
     elems = document.getElementsByClassName(classes[i]);
     for (let j = 0; j < elems.length; j++) {
       try {
-        if (classes[i] == 'bg-dark'){
+        if (classes[i] == 'bg-dark') {
           elems[j].classList.remove('bg-dark');
         }
-        if (classes[i] == 'text-light'){
+        if (classes[i] == 'text-light') {
           elems[j].classList.remove('text-light');
         }
         elems[j].style.backgroundColor = backgroundColor;
         elems[j].style.color = textColor;
         elems[j].style.borderColor = borderColor;
       } catch (e) {}
-
-
     }
   }
 
@@ -133,13 +130,12 @@ async function generalElements() {
   // logout popup
   while (true) {
     try {
-      await Sleep(5);
+      await sleep(5);
       elem = document.getElementsByClassName('modal-content')[0];
       elem.style.backgroundColor = backgroundColorLight;
       elem.style.color = textColor;
     } catch (e) {}
   }
-
 }
 
 generalElements()

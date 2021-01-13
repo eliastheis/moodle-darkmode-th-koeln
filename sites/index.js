@@ -1,6 +1,5 @@
 
-async function dark_mode() {
-
+async function DarkModeIndex() {
   console.log('[DarkMode] loading main.js...');
 
   classes = [
@@ -47,8 +46,6 @@ async function dark_mode() {
         elems[j].style.color = textColor;
         elems[j].style.borderColor = borderColor;
       } catch (e) {}
-
-
     }
   }
 
@@ -68,7 +65,7 @@ async function dark_mode() {
     try {
       document.getElementById(idsLightest[i]).style.backgroundColor = backgroundColorLightest;
       document.getElementById(idsLightest[i]).style.color = textColor;
-    } catch(e) {}
+    } catch (e) {}
   }
 
   // IDs
@@ -88,8 +85,6 @@ async function dark_mode() {
     elem = document.querySelectorAll('[src="https://moodle.uni-wuppertal.de/pluginfile.php/1624/block_html/content/ZIM%20log%20klein%20und%20gr%C3%BCn.png"]')[0]
     elem.style.backgroundColor = textColor;
   } catch (e) {}
-
-
 }
 
-dark_mode();
+DarkModeIndex();

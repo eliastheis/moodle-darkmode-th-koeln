@@ -13,7 +13,6 @@ for (let i = 0; i < classes.length; i++) {
   elems = document.getElementsByClassName(classes[i]);
   for (let j = 0; j < elems.length; j++) {
     try {
-
       elems[j].classList.remove('bg-dark');
       elems[j].classList.remove('text-light');
 
@@ -30,12 +29,10 @@ elem.style.color = textColor;
 
 try {
   document.getElementsByClassName('homelink')[0].childNodes[0].style = 'color: white!important;';
-} catch(e) {}
+} catch (e) {}
 try {
   document.getElementsByClassName('policiesfooter')[0].childNodes[0].style = 'color: white!important;';
-} catch(e) {}
-
-
+} catch (e) {}
 
 elem = document.getElementsByClassName('text_to_html')[0];
 node = document.createTextNode(' | Darkmode by Elias Theis ');
