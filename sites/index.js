@@ -1,5 +1,5 @@
 
-async function DarkModeIndex() {
+async function darkModeIndex() {
   console.log('[DarkMode] loading main.js...');
 
   classes = [
@@ -87,4 +87,4 @@ async function DarkModeIndex() {
   } catch (e) {}
 }
 
-DarkModeIndex();
+darkModeIndex();
