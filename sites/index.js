@@ -1,4 +1,15 @@
+console.log('[DarkMode] loading main.js...');
 
+elems = document.querySelectorAll('[style="color: #0033cc;"]')
+  for (let j = 0; j < elems.length; j++) {
+    try {
+      elems[j].style.color = textColor;
+    } catch (e) {}
+  }
+
+// style="color: #0033cc;"
+
+/*
 async function darkModeIndex() {
   console.log('[DarkMode] loading main.js...');
 
@@ -88,3 +99,4 @@ async function darkModeIndex() {
 }
 
 darkModeIndex();
+*/

@@ -34,8 +34,8 @@ try {
   document.getElementsByClassName('policiesfooter')[0].childNodes[0].style = 'color: white!important;';
 } catch (e) {}
 
-elem = document.getElementsByClassName('text_to_html')[0];
-node = document.createTextNode(' | Darkmode by Elias Theis ');
+elem = document.getElementsByClassName('container')[0];
+node = document.createTextNode('| Darkmode by Elias Theis ');
 a = document.createElement('a')
 a.href = 'https://www.buymeacoffee.com/eliastheis'
 a.target = '_blank'

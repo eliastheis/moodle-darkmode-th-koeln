@@ -1,5 +1,16 @@
 console.log('[DarkMode] loading banner.js...');
 
+// navbar
+elem = document.getElementsByClassName("navbar")[0];
+elem.style.backgroundColor = backgroundColorLight;
+elem.style.color = textColor;
+
+// language 
+elem = document.getElementsByClassName("nav-link")[0];
+elem.style.backgroundColor = backgroundColorLight;
+elem.style.color = textColor;
+
+/*
 // menue icon
 elem = document.getElementsByClassName('btn nav-link float-sm-left mr-1 btn-light bg-gray')[0]
 elem.classList.remove('bg-gray');
@@ -49,3 +60,4 @@ for (let i = 0; i < classesLight.length; i++) {
     } catch (e) {}
   }
 }
+*/

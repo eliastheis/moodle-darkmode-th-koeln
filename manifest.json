@@ -1,66 +1,65 @@
 {
-    "name": "Darkmode für BUW Moodle",
-    "version": "1.1.0",
+    "name": "Darkmode für TH Köln Moodle",
+    "version": "1.0.0",
     "manifest_version": 2,
-    "description": "Darkmode für BUW Moodle.",
+    "description": "Darkmode für TH Köln Moodle.",
     "icons": 
 {        "128": "icon.png"
     },
     "permissions": [
-        "*://moodle.uni-wuppertal.de/*"
+        "*://moodle.th-koeln.de/*"
     ],
     "browser_action": {
         "default_icon": "icon.png",
         "default_popup": "popup.html",
-        "default_title": "Darkmode for Moodle"
+        "default_title": "Darkmode for TH Köln Moodle"
     },
     "content_scripts": [
         {
-            "matches": [ "*://moodle.uni-wuppertal.de/*" ],
+            "matches": [ "*://moodle.th-koeln.de/*" ],
             "css": ["css/hide.css"],
             "js": ["scripts/config.js",
                    "scripts/banner.js",
-                   "scripts/menue.js",
                    "scripts/chat.js",
                    "scripts/footer.js",
                    "scripts/generalElements.js",
                    "scripts/show.js"],
-            "exclude_matches": ["*://moodle.uni-wuppertal.de/mod/quiz/*"]
+            "exclude_matches": ["*://moodle.th-koeln.de/mod/quiz/*"]
         },
         {
-            "matches": [ "*://moodle.uni-wuppertal.de/" ],
+            "matches": [ "*://moodle.th-koeln.de/" ],
             "js": ["sites/index.js"]
         },
         {
-            "matches": ["*://moodle.uni-wuppertal.de/course/*"],
+            "matches": ["*://moodle.th-koeln.de/course/*"],
             "js": ["sites/course.js"]
         },
         {
-            "matches": ["*://moodle.uni-wuppertal.de/user/index.*"],
+            "matches": ["*://moodle.th-koeln.de/user/index.*"],
             "js": ["sites/user.js"]
         },
         {
-            "matches": ["*://moodle.uni-wuppertal.de/grade/*"],
+            "matches": ["*://moodle.th-koeln.de/grade/*"],
             "js": ["sites/grade.js"]
         },
         {
-            "matches": ["*://moodle.uni-wuppertal.de/my/*"],
+            "matches": ["*://moodle.th-koeln.de/my/*"],
             "js": ["sites/dashboard.js"]
         },
         {
-            "matches": ["*://moodle.uni-wuppertal.de/mod/publication*"],
+            "matches": ["*://moodle.th-koeln.de/mod/publication*"],
             "js": ["sites/mod_publication.js"]
         },
         {
-            "matches": ["*://moodle.uni-wuppertal.de/mod/folder*"],
+            "matches": ["*://moodle.th-koeln.de/mod/folder*"],
             "js": ["sites/mod_folder.js"]
         },
         {
-            "matches": ["*://moodle.uni-wuppertal.de/report/filehash/*"],
+            "matches": ["*://moodle.th-koeln.de/report/filehash/*"],
             "js": ["sites/report_filehash.js"]
         },
         {
-            "matches": ["*://moodle.uni-wuppertal.de/mod/quiz/*"],
+            "matches": ["*://moodle.th-koeln.de/mod/quiz/*"],
             "js": ["scripts/config.js",
                    "scripts/banner.js",
                    "scripts/menue.js",
