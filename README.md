@@ -4,7 +4,7 @@ Diese Extension erweitertet Moodle von TH Köln (Technische Hochschule Köln) um
 ## Download
 
 [Firefox Addon](#)<br>
-[Chrome Extension](#)
+[Chrome Extension](https://chrome.google.com/webstore/detail/darkmode-f%C3%BCr-th-k%C3%B6ln-mood/pojhoibbbofmicpcagiekkoalaiglnlh)
 
 
 ## Screnhot
